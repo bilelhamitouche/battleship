@@ -1,10 +1,9 @@
 import GameBoard from './GameBoard';
 
 export default class Player {
-  constructor(name) {
+  constructor(name, computer = false) {
+    this.computer = computer;
     this.name = name;
     this.gameBoard = new GameBoard();
   }
-  receiveAttack() {}
-  areAllShipsSunk() {}
 }
