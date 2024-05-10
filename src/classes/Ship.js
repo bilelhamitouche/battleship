@@ -1,8 +1,8 @@
 export default class Ship {
-  constructor(length = 1) {
+  constructor(length = 1, orientation = 'horizontal') {
     this.length = length;
+    this.orientation = orientation;
     this.numberOfHits = 0;
-    this.sunk = false;
   }
   hit() {
     return ++this.numberOfHits;
