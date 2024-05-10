@@ -7,13 +7,13 @@ test('Testing if Ship class exists', () => {
 test('Testing if calling with new works as intended', () => {
   expect(new Ship()).toEqual({
     length: 1,
+    orientation: 'horizontal',
     numberOfHits: 0,
-    sunk: false,
   });
   expect(new Ship(5)).toEqual({
     length: 5,
+    orientation: 'horizontal',
     numberOfHits: 0,
-    sunk: false,
   });
   expect(new Ship().hit).toBeDefined();
   expect(new Ship().isSunk).toBeDefined();
